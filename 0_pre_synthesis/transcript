@@ -1,0 +1,65 @@
+# do run_sim.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:45:43 on Feb 07,2025
+# vlog -reportprogress 300 alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:45:44 on Feb 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:45:44 on Feb 07,2025
+# vlog -reportprogress 300 alu_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:45:44 on Feb 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.alu_tb 
+# Start time: 15:45:44 on Feb 07,2025
+# Loading work.alu_tb
+# Loading work.alu
+# Time=0 TestCase=               RESET rst_n=0 a=00 b=00 opcode=0000 result=00 zero_flag=0 overflow_flag=0
+# Time=100 TestCase=          ADD_NORMAL rst_n=1 a=35 b=42 opcode=0000 result=00 zero_flag=0 overflow_flag=0
+# Time=105 TestCase=          ADD_NORMAL rst_n=1 a=35 b=42 opcode=0000 result=77 zero_flag=1 overflow_flag=0
+# Time=115 TestCase=          ADD_NORMAL rst_n=1 a=35 b=42 opcode=0000 result=77 zero_flag=0 overflow_flag=0
+# Time=120 TestCase=        ADD_OVERFLOW rst_n=1 a=ff b=02 opcode=0000 result=77 zero_flag=0 overflow_flag=0
+# Time=125 TestCase=        ADD_OVERFLOW rst_n=1 a=ff b=02 opcode=0000 result=01 zero_flag=0 overflow_flag=1
+# Time=140 TestCase=            SUBTRACT rst_n=1 a=50 b=20 opcode=0001 result=01 zero_flag=0 overflow_flag=1
+# Time=145 TestCase=            SUBTRACT rst_n=1 a=50 b=20 opcode=0001 result=30 zero_flag=0 overflow_flag=0
+# Time=160 TestCase=              AND_OP rst_n=1 a=f0 b=0f opcode=0010 result=30 zero_flag=0 overflow_flag=0
+# Time=165 TestCase=              AND_OP rst_n=1 a=f0 b=0f opcode=0010 result=00 zero_flag=0 overflow_flag=0
+# Time=175 TestCase=              AND_OP rst_n=1 a=f0 b=0f opcode=0010 result=00 zero_flag=1 overflow_flag=0
+# Time=180 TestCase=               OR_OP rst_n=1 a=f0 b=0f opcode=0011 result=00 zero_flag=1 overflow_flag=0
+# Time=185 TestCase=               OR_OP rst_n=1 a=f0 b=0f opcode=0011 result=ff zero_flag=1 overflow_flag=0
+# Time=195 TestCase=               OR_OP rst_n=1 a=f0 b=0f opcode=0011 result=ff zero_flag=0 overflow_flag=0
+# Time=200 TestCase=              XOR_OP rst_n=1 a=ff b=0f opcode=0100 result=ff zero_flag=0 overflow_flag=0
+# Time=205 TestCase=              XOR_OP rst_n=1 a=ff b=0f opcode=0100 result=f0 zero_flag=0 overflow_flag=0
+# Time=220 TestCase=          SHIFT_LEFT rst_n=1 a=01 b=02 opcode=0101 result=f0 zero_flag=0 overflow_flag=0
+# Time=225 TestCase=          SHIFT_LEFT rst_n=1 a=01 b=02 opcode=0101 result=04 zero_flag=0 overflow_flag=0
+# Time=240 TestCase=         SHIFT_RIGHT rst_n=1 a=80 b=02 opcode=0110 result=04 zero_flag=0 overflow_flag=0
+# Time=245 TestCase=         SHIFT_RIGHT rst_n=1 a=80 b=02 opcode=0110 result=20 zero_flag=0 overflow_flag=0
+# Time=260 TestCase=     COMPARE_GREATER rst_n=1 a=80 b=20 opcode=0111 result=20 zero_flag=0 overflow_flag=0
+# Time=265 TestCase=     COMPARE_GREATER rst_n=1 a=80 b=20 opcode=0111 result=01 zero_flag=0 overflow_flag=0
+# Time=280 TestCase=       COMPARE_EQUAL rst_n=1 a=20 b=20 opcode=0111 result=01 zero_flag=0 overflow_flag=0
+# Time=285 TestCase=       COMPARE_EQUAL rst_n=1 a=20 b=20 opcode=0111 result=00 zero_flag=0 overflow_flag=0
+# Time=295 TestCase=       COMPARE_EQUAL rst_n=1 a=20 b=20 opcode=0111 result=00 zero_flag=1 overflow_flag=0
+# Time=300 TestCase=        COMPARE_LESS rst_n=1 a=10 b=20 opcode=0111 result=00 zero_flag=1 overflow_flag=0
+# Time=305 TestCase=        COMPARE_LESS rst_n=1 a=10 b=20 opcode=0111 result=02 zero_flag=1 overflow_flag=0
+# Time=315 TestCase=        COMPARE_LESS rst_n=1 a=10 b=20 opcode=0111 result=02 zero_flag=0 overflow_flag=0
+# Time=320 TestCase=             END_SIM rst_n=1 a=10 b=20 opcode=0111 result=02 zero_flag=0 overflow_flag=0
+# ** Note: $finish    : alu_tb.v(128)
+#    Time: 340 ps  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 128
+# 0 ps
+# 357 ps
+# ** Error: unknown or ambiguous subcommand "update": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+# Error in macro ./run_sim.tcl line 58
+# unknown or ambiguous subcommand "update": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+#     while executing
+# "wave update"
+# End time: 15:46:38 on Feb 07,2025, Elapsed time: 0:00:54
+# Errors: 1, Warnings: 0

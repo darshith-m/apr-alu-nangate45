@@ -1,0 +1,48 @@
+# Read the design
+read_verilog -sv ../0_pre_synthesis/alu.sv
+
+# Read the NanGate45 liberty file
+read_liberty -lib ../NanGate45/lib/NangateOpenCellLibrary_typical.lib
+
+# Specify top module hierarchy
+hierarchy -check -top alu
+
+# Flatten the design
+flatten
+
+# Basic optimization
+proc
+opt
+
+# Generic synthesis
+synth -top alu
+
+# Set undefined nets to zero
+setundef -zero
+
+# Map sequential elements
+dfflibmap -liberty ../NanGate45/lib/NangateOpenCellLibrary_typical.lib
+
+# Map constants
+hilomap -hicell LOGIC1_X1 Z -locell LOGIC0_X1 Z -singleton
+
+# Technology mapping
+abc -liberty ../NanGate45/lib/NangateOpenCellLibrary_typical.lib
+
+# Clean up
+clean
+
+# Perform static timing analysis
+#sta
+
+# Post-synthesis checks and reports
+check -assert -mapped
+
+# Generate detailed post-synthesis reports
+stat -liberty ../NanGate45/lib/NangateOpenCellLibrary_typical.lib
+
+# Write synthesized netlist
+write_verilog -noattr synthesized_alu.v
+
+# Write synthesized netlist in SPICE format with options
+write_spice -pos VDD -neg VSS -top alu -big_endian -buf subckt_name -nc_prefix _NC -inames synthesized_alu.sp

@@ -1,0 +1,10 @@
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+b[1]                                      8     29    -21 (VIOLATED)
+b[0]                                      8     21    -13 (VIOLATED)
+rst_n                                     8     11     -3 (VIOLATED)
+a[4]                                      8      9        (VIOLATED)
+a[7]                                      8      9        (VIOLATED)
+

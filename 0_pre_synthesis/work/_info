@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/darshith/code/apr/adder
+valu
+Z1 !s110 1738968344
+!i10b 1
+!s100 V`[^>2?LG3TWYJZT0;OmJ3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV;<6AdmIHb5dkSPaRL0oF0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1738967918
+8alu.v
+Falu.v
+!i122 0
+L0 2 86
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1738968343.000000
+!s107 alu.v|
+!s90 -reportprogress|300|alu.v|
+!i113 1
+Z5 tCvgOpt 0
+valu_tb
+R1
+!i10b 1
+!s100 oa3;DF?XCb@0UXcY=eMCV3
+R2
+IjN][Rll4?NFG;QeE<5a:D1
+R3
+R0
+w1738968261
+8alu_tb.v
+Falu_tb.v
+!i122 1
+L0 2 136
+R4
+r1
+!s85 0
+31
+!s108 1738968344.000000
+!s107 alu_tb.v|
+!s90 -reportprogress|300|alu_tb.v|
+!i113 1
+R5
