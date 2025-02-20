@@ -1,3 +1,4 @@
+Warning: Joining path (or parts of it) because of short-edged begin or end segments (layer metal1 (11/0), first point 190950,333800) (line=2666, cell=, file=alu_final.def)
 [INFO] Reporting cells prior to loading DEF ...
 [INFO] Reading DEF ...
 [INFO] Clearing cells...
@@ -57,8 +58,8 @@ OAI22_X1
 DFF_X2
 CLKBUF_X3
 BUF_X2
-BUF_X1
 CLKBUF_X2
+BUF_X1
 BUF_X4
 CLKBUF_X1
 VIA_via9_10_1600_1600_1_1_3360_3360
@@ -78,8 +79,8 @@ VIA_via2_3_940_340_1_3_320_320
 VIA_via1_2_940_340_1_3_300_300
 VIA_via1_4
 VIA_via2_5
-VIA_via1_7
 VIA_via3_2
+VIA_via1_7
 VIA_via4_0
 VIA_via5_0
 [INFO] All LEF cells have matching GDS/OAS cells

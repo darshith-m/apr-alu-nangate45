@@ -89,10 +89,8 @@ add_pdn_connect -grid {grid} -layers {metal4 metal9}
 add_pdn_connect -grid {grid} -layers {metal7 metal10}
 add_pdn_connect -grid {grid} -layers {metal9 metal10}
 
-####################################
-# Generate and Check PDN
-####################################
-pdngen -failed_via_report pdn_failed.rpt
+# Generate PDN
+pdngen
 
 # Verify power grid
 check_power_grid -net VDD -dont_require_terminals
@@ -138,8 +136,6 @@ checkpoint_stage "pinplacement"
 # 5. Global Placement
 ############################################################
 
-remove_buffers
-
 global_placement \
     -timing_driven \
     -routability_driven \
@@ -164,8 +160,10 @@ detailed_placement
 # Estimate parasitics based on placement
 estimate_parasitics -placement
 
+remove_buffers
+
 repair_design \
-    -max_wire_length 100 \
+    -max_wire_length 50 \
     -max_utilization 0.6 \
     -slew_margin 0.2 \
     -cap_margin 0.2 \
@@ -193,6 +191,8 @@ generate_timing_reports "detailplace"
 # Set routing layers
 set_routing_layers -signal metal2-metal5 -clock metal5-metal6
 
+repair_clock_inverters
+
 # Perform Clock Tree Synthesis
 clock_tree_synthesis \
     -buf_list {CLKBUF_X1 CLKBUF_X2 CLKBUF_X3 BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32} \
@@ -207,6 +207,8 @@ clock_tree_synthesis \
     -branching_point_buffers_distance 40 \
     -distance_between_buffers 40 \
     -sink_clustering_buffer CLKBUF_X2
+
+
 
 repair_timing -hold \
     -hold_margin 0.1 \
