@@ -8,48 +8,52 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/darshith/code/apr/adder
+Z0 d/home/darshith/code/apr/apr-alu-nangate45/0_pre_synthesis
 valu
-Z1 !s110 1738968344
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1740269243
 !i10b 1
-!s100 V`[^>2?LG3TWYJZT0;OmJ3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IV;<6AdmIHb5dkSPaRL0oF0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 QaTeonUN6I4[lGPmAlTzn2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH91:7hzWL1h^e]L=26><L3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
 R0
-w1738967918
-8alu.v
-Falu.v
-!i122 0
-L0 2 86
-Z4 OV;L;2020.1;71
+Z5 w1740023588
+8alu.sv
+Falu.sv
+!i122 4
+L0 2 103
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1738968343.000000
-!s107 alu.v|
-!s90 -reportprogress|300|alu.v|
+!s108 1740269242.000000
+!s107 alu.sv|
+!s90 -reportprogress|300|alu.sv|
 !i113 1
-Z5 tCvgOpt 0
+Z7 tCvgOpt 0
 valu_tb
 R1
-!i10b 1
-!s100 oa3;DF?XCb@0UXcY=eMCV3
 R2
-IjN][Rll4?NFG;QeE<5a:D1
+!i10b 1
+!s100 0ighg^1_SJHcSI55?b@oP2
 R3
-R0
-w1738968261
-8alu_tb.v
-Falu_tb.v
-!i122 1
-L0 2 136
+IzbbAQGEcYGeMh:bEBiBe33
 R4
+S1
+R0
+R5
+8../0_pre_synthesis/alu_tb.sv
+F../0_pre_synthesis/alu_tb.sv
+!i122 5
+L0 2 136
+R6
 r1
 !s85 0
 31
-!s108 1738968344.000000
-!s107 alu_tb.v|
-!s90 -reportprogress|300|alu_tb.v|
+!s108 1740269243.000000
+!s107 ../0_pre_synthesis/alu_tb.sv|
+!s90 -reportprogress|300|../0_pre_synthesis/alu_tb.sv|
 !i113 1
-R5
+R7

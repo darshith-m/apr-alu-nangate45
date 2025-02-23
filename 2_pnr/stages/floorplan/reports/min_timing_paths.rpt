@@ -1,131 +1,4 @@
-[WARNING STA-0503] report_checks -group_count is deprecated. Use -group_path_count instead.
-Startpoint: b[7] (input port clocked by clk)
-Endpoint: _476_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ input external delay
-   0.03    0.03 ^ b[7] (in)
-   0.02    0.05 v _464_/ZN (AOI21_X1)
-   0.03    0.08 ^ _465_/ZN (OAI221_X1)
-   0.03    0.11 ^ _466_/ZN (AND2_X1)
-   0.00    0.11 ^ _476_/D (DFF_X1)
-           0.11   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _476_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.11   data arrival time
----------------------------------------------------------
-           0.00   slack (MET)
-
-
-Startpoint: opcode[0] (input port clocked by clk)
-Endpoint: _475_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 v input external delay
-   0.01    0.01 v opcode[0] (in)
-   0.04    0.05 ^ _349_/ZN (NAND2_X1)
-   0.02    0.08 v _459_/ZN (OAI221_X1)
-   0.03    0.11 ^ _463_/ZN (OAI22_X1)
-   0.00    0.11 ^ _475_/D (DFF_X1)
-           0.11   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _475_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.11   data arrival time
----------------------------------------------------------
-           0.00   slack (MET)
-
-
-Startpoint: a[7] (input port clocked by clk)
-Endpoint: _468_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 v input external delay
-   0.02    0.02 v a[7] (in)
-   0.02    0.04 ^ _255_/ZN (NAND2_X1)
-   0.03    0.07 ^ _295_/ZN (AND2_X1)
-   0.02    0.09 v _365_/ZN (AOI21_X1)
-   0.02    0.11 ^ _366_/ZN (AOI21_X1)
-   0.00    0.11 ^ _468_/D (DFF_X1)
-           0.11   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _468_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.11   data arrival time
----------------------------------------------------------
-           0.00   slack (MET)
-
-
-Startpoint: a[5] (input port clocked by clk)
-Endpoint: _473_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ input external delay
-   0.02    0.02 ^ a[5] (in)
-   0.02    0.05 v _291_/ZN (AOI21_X1)
-   0.02    0.07 ^ _435_/ZN (NAND3_X1)
-   0.02    0.09 v _445_/ZN (AOI221_X1)
-   0.02    0.11 ^ _446_/ZN (AOI21_X1)
-   0.00    0.11 ^ _473_/D (DFF_X1)
-           0.11   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _473_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.11   data arrival time
----------------------------------------------------------
-           0.00   slack (MET)
-
-
-Startpoint: _476_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _486_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: overflow_flag (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -134,8 +7,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _476_/CK (DFF_X1)
-   0.10    0.10 ^ _476_/Q (DFF_X1)
+   0.00    0.00 ^ _486_/CK (DFF_X1)
+   0.10    0.10 ^ _486_/Q (DFF_X1)
    0.00    0.10 ^ overflow_flag (out)
            0.10   data arrival time
 
@@ -152,7 +25,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _467_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _477_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[0] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -161,8 +34,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _467_/CK (DFF_X1)
-   0.10    0.10 ^ _467_/Q (DFF_X1)
+   0.00    0.00 ^ _477_/CK (DFF_X1)
+   0.10    0.10 ^ _477_/Q (DFF_X1)
    0.00    0.10 ^ result[0] (out)
            0.10   data arrival time
 
@@ -179,7 +52,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _468_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _478_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[1] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -188,8 +61,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _468_/CK (DFF_X1)
-   0.10    0.10 ^ _468_/Q (DFF_X1)
+   0.00    0.00 ^ _478_/CK (DFF_X1)
+   0.10    0.10 ^ _478_/Q (DFF_X1)
    0.00    0.10 ^ result[1] (out)
            0.10   data arrival time
 
@@ -206,7 +79,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _469_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _479_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[2] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -215,8 +88,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _469_/CK (DFF_X1)
-   0.10    0.10 ^ _469_/Q (DFF_X1)
+   0.00    0.00 ^ _479_/CK (DFF_X1)
+   0.10    0.10 ^ _479_/Q (DFF_X1)
    0.00    0.10 ^ result[2] (out)
            0.10   data arrival time
 
@@ -233,7 +106,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _470_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _480_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[3] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -242,8 +115,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _470_/CK (DFF_X1)
-   0.10    0.10 ^ _470_/Q (DFF_X1)
+   0.00    0.00 ^ _480_/CK (DFF_X1)
+   0.10    0.10 ^ _480_/Q (DFF_X1)
    0.00    0.10 ^ result[3] (out)
            0.10   data arrival time
 
@@ -260,7 +133,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _471_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _481_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[4] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -269,8 +142,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _471_/CK (DFF_X1)
-   0.10    0.10 ^ _471_/Q (DFF_X1)
+   0.00    0.00 ^ _481_/CK (DFF_X1)
+   0.10    0.10 ^ _481_/Q (DFF_X1)
    0.00    0.10 ^ result[4] (out)
            0.10   data arrival time
 
@@ -287,7 +160,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _472_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _482_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[5] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -296,8 +169,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _472_/CK (DFF_X1)
-   0.10    0.10 ^ _472_/Q (DFF_X1)
+   0.00    0.00 ^ _482_/CK (DFF_X1)
+   0.10    0.10 ^ _482_/Q (DFF_X1)
    0.00    0.10 ^ result[5] (out)
            0.10   data arrival time
 
@@ -314,7 +187,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _473_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _483_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[6] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -323,8 +196,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _473_/CK (DFF_X1)
-   0.10    0.10 ^ _473_/Q (DFF_X1)
+   0.00    0.00 ^ _483_/CK (DFF_X1)
+   0.10    0.10 ^ _483_/Q (DFF_X1)
    0.00    0.10 ^ result[6] (out)
            0.10   data arrival time
 
@@ -341,7 +214,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _474_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _484_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: result[7] (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -350,8 +223,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _474_/CK (DFF_X1)
-   0.10    0.10 ^ _474_/Q (DFF_X1)
+   0.00    0.00 ^ _484_/CK (DFF_X1)
+   0.10    0.10 ^ _484_/Q (DFF_X1)
    0.00    0.10 ^ result[7] (out)
            0.10   data arrival time
 
@@ -368,7 +241,7 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: _475_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _485_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: zero_flag (output port clocked by clk)
 Path Group: clk
 Path Type: min
@@ -377,8 +250,8 @@ Path Type: min
 ---------------------------------------------------------
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ _475_/CK (DFF_X1)
-   0.10    0.10 ^ _475_/Q (DFF_X1)
+   0.00    0.00 ^ _485_/CK (DFF_X1)
+   0.10    0.10 ^ _485_/Q (DFF_X1)
    0.00    0.10 ^ zero_flag (out)
            0.10   data arrival time
 
@@ -395,39 +268,8 @@ Path Type: min
            0.00   slack (MET)
 
 
-Startpoint: opcode[0] (input port clocked by clk)
-Endpoint: _469_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ input external delay
-   0.03    0.03 ^ opcode[0] (in)
-   0.03    0.06 v _368_/ZN (NAND4_X1)
-   0.02    0.08 ^ _381_/ZN (NAND3_X1)
-   0.03    0.11 ^ _382_/ZN (AND2_X1)
-   0.00    0.11 ^ _469_/D (DFF_X1)
-           0.11   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _469_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.11   data arrival time
----------------------------------------------------------
-           0.01   slack (MET)
-
-
-Startpoint: a[7] (input port clocked by clk)
-Endpoint: _467_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: b[7] (input port clocked by clk)
+Endpoint: _486_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: min
 
@@ -436,19 +278,215 @@ Path Type: min
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 v input external delay
-   0.02    0.02 v a[7] (in)
-   0.02    0.04 ^ _255_/ZN (NAND2_X1)
-   0.02    0.05 v _296_/ZN (NAND2_X1)
-   0.05    0.10 ^ _340_/ZN (AOI211_X1)
-   0.02    0.12 v _341_/ZN (AOI21_X1)
-   0.00    0.12 v _467_/D (DFF_X1)
+   0.01    0.01 v b[7] (in)
+   0.02    0.03 ^ _268_/ZN (NAND2_X1)
+   0.01    0.04 v _269_/ZN (INV_X1)
+   0.03    0.06 ^ _473_/ZN (AOI21_X1)
+   0.01    0.08 v _475_/ZN (OAI21_X1)
+   0.03    0.11 v _476_/ZN (AND2_X1)
+   0.00    0.11 v _486_/D (DFF_X1)
+           0.11   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _486_/CK (DFF_X1)
+   0.00    0.10   library hold time
+           0.10   data required time
+---------------------------------------------------------
+           0.10   data required time
+          -0.11   data arrival time
+---------------------------------------------------------
+           0.00   slack (MET)
+
+
+Startpoint: a[0] (input port clocked by clk)
+Endpoint: _478_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v a[0] (in)
+   0.03    0.04 ^ _310_/ZN (NAND2_X1)
+   0.02    0.06 v _359_/ZN (OAI21_X1)
+   0.02    0.08 ^ _360_/ZN (NAND4_X1)
+   0.01    0.09 v _361_/ZN (NOR2_X1)
+   0.02    0.12 ^ _362_/ZN (AOI21_X1)
+   0.00    0.12 ^ _478_/D (DFF_X1)
            0.12   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.10    0.10   clock uncertainty
    0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _467_/CK (DFF_X1)
+           0.10 ^ _478_/CK (DFF_X1)
+   0.01    0.11   library hold time
+           0.11   data required time
+---------------------------------------------------------
+           0.11   data required time
+          -0.12   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+Startpoint: a[3] (input port clocked by clk)
+Endpoint: _481_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v a[3] (in)
+   0.02    0.04 ^ _281_/ZN (NAND2_X1)
+   0.02    0.06 v _408_/ZN (NAND3_X1)
+   0.04    0.09 ^ _418_/ZN (AOI21_X1)
+   0.02    0.11 v _419_/ZN (AOI21_X1)
+   0.00    0.11 v _481_/D (DFF_X1)
+           0.11   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _481_/CK (DFF_X1)
+   0.00    0.10   library hold time
+           0.10   data required time
+---------------------------------------------------------
+           0.10   data required time
+          -0.11   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+Startpoint: b[6] (input port clocked by clk)
+Endpoint: _485_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v b[6] (in)
+   0.03    0.04 ^ _456_/ZN (OAI21_X1)
+   0.02    0.06 v _457_/Z (XOR2_X1)
+   0.04    0.10 ^ _468_/ZN (OAI221_X1)
+   0.01    0.11 v _472_/ZN (OAI21_X1)
+   0.00    0.11 v _485_/D (DFF_X1)
+           0.11   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _485_/CK (DFF_X1)
+   0.00    0.10   library hold time
+           0.10   data required time
+---------------------------------------------------------
+           0.10   data required time
+          -0.11   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+Startpoint: a[2] (input port clocked by clk)
+Endpoint: _480_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v a[2] (in)
+   0.02    0.03 ^ _387_/ZN (NAND2_X1)
+   0.02    0.05 v _389_/ZN (AOI21_X1)
+   0.03    0.08 ^ _401_/ZN (OAI211_X1)
+   0.01    0.09 v _402_/ZN (AOI21_X1)
+   0.02    0.12 ^ _403_/ZN (AOI21_X1)
+   0.00    0.12 ^ _480_/D (DFF_X1)
+           0.12   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _480_/CK (DFF_X1)
+   0.01    0.11   library hold time
+           0.11   data required time
+---------------------------------------------------------
+           0.11   data required time
+          -0.12   data arrival time
+---------------------------------------------------------
+           0.01   slack (MET)
+
+
+Startpoint: a[5] (input port clocked by clk)
+Endpoint: _482_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ input external delay
+   0.02    0.02 ^ a[5] (in)
+   0.03    0.05 v _421_/Z (XOR2_X1)
+   0.03    0.08 ^ _424_/ZN (OAI21_X1)
+   0.02    0.10 v _436_/ZN (AOI21_X1)
+   0.02    0.12 ^ _437_/ZN (AOI21_X1)
+   0.00    0.12 ^ _482_/D (DFF_X1)
+           0.12   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _482_/CK (DFF_X1)
+   0.01    0.11   library hold time
+           0.11   data required time
+---------------------------------------------------------
+           0.11   data required time
+          -0.12   data arrival time
+---------------------------------------------------------
+           0.02   slack (MET)
+
+
+Startpoint: opcode[3] (input port clocked by clk)
+Endpoint: _479_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ input external delay
+   0.02    0.02 ^ opcode[3] (in)
+   0.03    0.04 v _316_/ZN (NOR4_X1)
+   0.02    0.07 ^ _366_/ZN (NAND2_X1)
+   0.01    0.08 v _367_/ZN (OAI21_X1)
+   0.03    0.11 ^ _382_/ZN (AOI21_X1)
+   0.01    0.12 v _383_/ZN (NOR2_X1)
+   0.00    0.12 v _479_/D (DFF_X1)
+           0.12   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.10    0.10   clock uncertainty
+   0.00    0.10   clock reconvergence pessimism
+           0.10 ^ _479_/CK (DFF_X1)
    0.00    0.10   library hold time
            0.10   data required time
 ---------------------------------------------------------
@@ -458,8 +496,8 @@ Path Type: min
            0.02   slack (MET)
 
 
-Startpoint: b[4] (input port clocked by clk)
-Endpoint: _472_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: opcode[1] (input port clocked by clk)
+Endpoint: _477_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: min
 
@@ -468,67 +506,29 @@ Path Type: min
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 v input external delay
-   0.01    0.01 v b[4] (in)
-   0.01    0.02 ^ _247_/ZN (INV_X1)
-   0.02    0.04 v _289_/ZN (NAND2_X1)
-   0.02    0.06 ^ _418_/ZN (NAND2_X1)
-   0.02    0.07 v _420_/ZN (OAI211_X1)
-   0.02    0.10 ^ _429_/ZN (OAI211_X1)
-   0.01    0.11 v _430_/ZN (INV_X1)
-   0.02    0.13 ^ _431_/ZN (AOI21_X1)
-   0.00    0.13 ^ _472_/D (DFF_X1)
+   0.01    0.01 v opcode[1] (in)
+   0.04    0.05 v _299_/ZN (AND4_X1)
+   0.06    0.11 ^ _325_/ZN (AOI211_X1)
+   0.02    0.13 v _327_/ZN (AOI21_X1)
+   0.00    0.13 v _477_/D (DFF_X1)
            0.13   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.10    0.10   clock uncertainty
    0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _472_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
+           0.10 ^ _477_/CK (DFF_X1)
+   0.00    0.10   library hold time
+           0.10   data required time
 ---------------------------------------------------------
-           0.11   data required time
+           0.10   data required time
           -0.13   data arrival time
 ---------------------------------------------------------
            0.02   slack (MET)
 
 
-Startpoint: b[3] (input port clocked by clk)
-Endpoint: _470_ (rising edge-triggered flip-flop clocked by clk)
-Path Group: clk
-Path Type: min
-
-  Delay    Time   Description
----------------------------------------------------------
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.00    0.00 ^ input external delay
-   0.01    0.01 ^ b[3] (in)
-   0.01    0.02 v _266_/ZN (NOR2_X1)
-   0.01    0.04 ^ _267_/ZN (INV_X1)
-   0.02    0.05 v _395_/ZN (AOI22_X1)
-   0.02    0.07 ^ _396_/ZN (NAND3_X1)
-   0.03    0.10 ^ _397_/ZN (OR3_X1)
-   0.03    0.13 ^ _398_/Z (MUX2_X1)
-   0.00    0.13 ^ _470_/D (DFF_X1)
-           0.13   data arrival time
-
-   0.00    0.00   clock clk (rise edge)
-   0.00    0.00   clock network delay (ideal)
-   0.10    0.10   clock uncertainty
-   0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _470_/CK (DFF_X1)
-   0.01    0.11   library hold time
-           0.11   data required time
----------------------------------------------------------
-           0.11   data required time
-          -0.13   data arrival time
----------------------------------------------------------
-           0.03   slack (MET)
-
-
-Startpoint: opcode[0] (input port clocked by clk)
-Endpoint: _474_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: a[5] (input port clocked by clk)
+Endpoint: _483_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: min
 
@@ -537,18 +537,19 @@ Path Type: min
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 v input external delay
-   0.01    0.01 v opcode[0] (in)
-   0.04    0.05 ^ _349_/ZN (NAND2_X1)
-   0.02    0.08 v _459_/ZN (OAI221_X1)
-   0.06    0.13 v _460_/Z (MUX2_X1)
-   0.00    0.13 v _474_/D (DFF_X1)
+   0.01    0.01 v a[5] (in)
+   0.02    0.03 ^ _420_/ZN (NAND2_X1)
+   0.02    0.05 v _443_/ZN (NAND3_X1)
+   0.06    0.11 ^ _454_/ZN (AOI211_X1)
+   0.02    0.13 v _455_/ZN (AOI21_X1)
+   0.00    0.13 v _483_/D (DFF_X1)
            0.13   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.10    0.10   clock uncertainty
    0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _474_/CK (DFF_X1)
+           0.10 ^ _483_/CK (DFF_X1)
    0.00    0.10   library hold time
            0.10   data required time
 ---------------------------------------------------------
@@ -558,8 +559,8 @@ Path Type: min
            0.03   slack (MET)
 
 
-Startpoint: opcode[0] (input port clocked by clk)
-Endpoint: _471_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: b[6] (input port clocked by clk)
+Endpoint: _484_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: min
 
@@ -568,25 +569,25 @@ Path Type: min
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 v input external delay
-   0.01    0.01 v opcode[0] (in)
-   0.02    0.04 ^ _250_/ZN (INV_X1)
-   0.03    0.07 v _353_/ZN (NAND2_X1)
-   0.04    0.11 ^ _414_/ZN (OAI211_X1)
-   0.04    0.14 ^ _415_/Z (MUX2_X1)
-   0.00    0.14 ^ _471_/D (DFF_X1)
-           0.14   data arrival time
+   0.01    0.01 v b[6] (in)
+   0.03    0.04 ^ _456_/ZN (OAI21_X1)
+   0.02    0.06 v _457_/Z (XOR2_X1)
+   0.04    0.10 ^ _468_/ZN (OAI221_X1)
+   0.04    0.13 ^ _469_/Z (MUX2_X1)
+   0.00    0.13 ^ _484_/D (DFF_X1)
+           0.13   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
    0.10    0.10   clock uncertainty
    0.00    0.10   clock reconvergence pessimism
-           0.10 ^ _471_/CK (DFF_X1)
+           0.10 ^ _484_/CK (DFF_X1)
    0.01    0.11   library hold time
            0.11   data required time
 ---------------------------------------------------------
            0.11   data required time
-          -0.14   data arrival time
+          -0.13   data arrival time
 ---------------------------------------------------------
-           0.04   slack (MET)
+           0.03   slack (MET)
 
 

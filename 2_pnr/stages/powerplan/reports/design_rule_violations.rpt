@@ -2,9 +2,17 @@ max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-b[1]                                      8     29    -21 (VIOLATED)
-b[0]                                      8     21    -13 (VIOLATED)
-rst_n                                     8     11     -3 (VIOLATED)
-a[4]                                      8      9        (VIOLATED)
-a[7]                                      8      9        (VIOLATED)
+b[1]                                      8     25    -17 (VIOLATED)
+b[0]                                      8     23    -15 (VIOLATED)
+opcode[0]                                 8     16     -8 (VIOLATED)
+b[2]                                      8     12     -4 (VIOLATED)
+a[4]                                      8     10     -2 (VIOLATED)
+rst_n                                     8      9        (VIOLATED)
+_253_/ZN                                  8      9        (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+_316_/ZN                               10.47   13.33   -2.86 (VIOLATED)
 

@@ -3,14 +3,13 @@
 
 # Delete previous compilation results
 quit -sim
-vdel -all -lib work
 
 # Create new library
 vlib work
 
 # Compile your Verilog files
-vlog alu.v
-vlog alu_tb.v
+vlog alu.sv
+vlog ../0_pre_synthesis/alu_tb.sv
 
 # Start simulation
 vsim work.alu_tb

@@ -4,4 +4,4 @@ klayout -zz     \
     -rd in_files="../NanGate45/gds/NangateOpenCellLibrary.gds"     \
     -rd out_file=alu.gds     \
     -rd tech_file=/home/darshith/.klayout/tech/NanGate45/FreePDK45.lyt     \
-    -rm def2stream.py > klayout.txt
+    -rm def2stream.py > convert_to_gds.txt

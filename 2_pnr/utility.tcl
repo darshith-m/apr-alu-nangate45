@@ -7,10 +7,7 @@ proc load_design_data {} {
 
     # Read Tech & Cell LEFs
     read_lef ../NanGate45/lef/NangateOpenCellLibrary.tech.lef
-    read_lef ../NanGate45/lef/NangateOpenCellLibrary.macro.lef
     read_lef ../NanGate45/lef/NangateOpenCellLibrary.macro.mod.lef
-    read_lef ../NanGate45/lef/NangateOpenCellLibrary.macro.rect.lef
-    
     
     # Read Design
     read_verilog ../1_synthesis/synthesized_alu.v
@@ -18,9 +15,6 @@ proc load_design_data {} {
     
     # Read SDC
     read_sdc ./constraints.sdc
-    
-    source ../NanGate45/make_tracks.tcl
-    source ../NanGate45/setRC.tcl
 }
 
 # File 1: Checkpoint and Timing Analysis procedures
@@ -42,15 +36,11 @@ proc restore_stage {stage_name} {
     if {[file exists $db_file]} {
         read_db $db_file
         puts "Loaded stage: $stage_name"
-        read_lef ../ASAP7/lef/asap7_tech_1x_201209.lef
-            read_liberty ../ASAP7/lib/asap7sc7p5t_AO_RVT_FF_ccs_211120.lib
-            read_liberty ../ASAP7/lib/asap7sc7p5t_INVBUF_RVT_FF_ccs_220122.lib
-            read_liberty ../ASAP7/lib/asap7sc7p5t_OA_RVT_FF_ccs_211120.lib
-            read_liberty ../ASAP7/lib/asap7sc7p5t_SEQ_RVT_FF_ccs_220123.lib
-            read_liberty ../ASAP7/lib/asap7sc7p5t_SIMPLE_RVT_FF_ccs_211120.lib
-            read_sdc ./constraints.sdc
-            source ../ASAP7/make_tracks.tcl
-            source ../ASAP7/setRC.tcl
+        read_lef ../NanGate45/lef/NangateOpenCellLibrary.tech.lef
+        read_lef ../NanGate45/lef/NangateOpenCellLibrary.macro.mod.lef
+        read_sdc ./constraints.sdc
+        source ../ASAP7/make_tracks.tcl
+        source ../ASAP7/setRC.tcl
         
     } else {
         puts "Error: Could not find database for stage $stage_name"

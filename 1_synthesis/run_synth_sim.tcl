@@ -3,7 +3,7 @@
 
 # Delete previous compilation results
 quit -sim
-vdel -all -lib work
+#vdel -all -lib work
 
 # Create new library
 vlib work
@@ -13,11 +13,7 @@ vlog synthesized_alu.v
 vlog ../0_pre_synthesis/alu_tb.sv
 
 # Compile synthesized Verilog files from ASAP7 directory
-vlog ../ASAP7/verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v
-vlog ../ASAP7/verilog/asap7sc7p5t_SEQ_RVT_TT_201020.v
-vlog ../ASAP7/verilog/asap7sc7p5t_OA_RVT_TT_201020.v
-vlog ../ASAP7/verilog/asap7sc7p5t_INVBUF_RVT_TT_201020.v
-vlog ../ASAP7/verilog/asap7sc7p5t_AO_RVT_TT_201020.v
+vlog ../NanGate45/verilog/cells.v
 
 # Start simulation (replace alu_synth_tb with your actual testbench name)
 vsim work.alu_tb

@@ -31,8 +31,8 @@ proc optimize_design {{max_wire_length 100} {util 0.9} {slew_margin 0.1} {cap_ma
     
     global_route -start_incremental
     detailed_placement
-    check_placement -verbose  
     global_route -end_incremental
+    check_placement -verbose
 }
 
 proc fix_pdn_vias {} {

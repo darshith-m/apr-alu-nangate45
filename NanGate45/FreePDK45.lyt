@@ -51,7 +51,8 @@
    <produce-routing>true</produce-routing>
    <routing-suffix/>
    <routing-datatype>0</routing-datatype>
-   <lef-files>./NangateOpenCellLibrary.mod.lef</lef-files>
+   <lef-files>/home/darshith/code/apr/apr-alu-nangate45/NanGate45/lef/NangateOpenCellLibrary.tech.lef</lef-files>
+   <lef-files>/home/darshith/code/apr/apr-alu-nangate45/NanGate45/lef/NangateOpenCellLibrary.macro.mod.lef</lef-files>
   </lefdef>
   <dxf>
    <dbu>0.0001</dbu>
